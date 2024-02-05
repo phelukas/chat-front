@@ -1,18 +1,19 @@
 import React, { useEffect } from 'react';
 import { Form, Input, Button, notification } from 'antd';
-import { getUser, updateUser } from '../../../api/userService'; // Certifique-se de que getUser está sendo importado corretamente
+import { getUser, updateUser } from '../../../api/userService'; 
 import styles from './UpdateUserForm.module.css';
 import { SmileOutlined, FrownOutlined } from '@ant-design/icons';
 
-const UpdateUserForm = () => { // Supondo que você tenha o userId disponível como prop
+const UpdateUserForm = () => {
   const [form] = Form.useForm();
   const [api, contextHolder] = notification.useNotification();
 
   useEffect(() => {
     const loadUserData = async () => {
       try {
-        const userData = await getUser(); // Chama a função getUser com o userId
-        form.setFieldsValue(userData); // Define os valores iniciais com os dados do usuário
+        const userData = await getUser();
+        console.log(userData)
+        form.setFieldsValue(userData); 
       } catch (err) {
         notification.error({
           message: 'Falha ao Carregar Dados do Usuário',
@@ -21,12 +22,12 @@ const UpdateUserForm = () => { // Supondo que você tenha o userId disponível c
       }
     };
 
-    loadUserData(); // Chama a função loadUserData quando o componente é montado
-  }, [ form]); // Dependências do useEffect
+    loadUserData(); 
+  }, [ form]); 
 
   const onFinish = async (values) => {
     try {
-      await updateUser(values); // Certifique-se de que updateUser aceita userId
+      await updateUser(values);
       api.open({
         message: 'Usuário Atualizado',
         description: 'Os dados do usuário foram atualizados com sucesso.',

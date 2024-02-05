@@ -2,7 +2,7 @@ import React from 'react';
 import UpdateUserForm from '../User/Update/UpdateUserForm'
 
 const DadosPessoais = () => {
-  return <div><UpdateUserForm /></div>;
+  return <UpdateUserForm />;
 };
 
 export default DadosPessoais;
