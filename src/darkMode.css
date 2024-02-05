@@ -1,0 +1,8 @@
+body {
+    background-color: #121212;
+    /* Cor de fundo escura */
+    color: #e0e0e0;
+    /* Cor de texto clara para contraste */
+}
+
+/* Estilizando componentes do Ant Design para o modo escuro */

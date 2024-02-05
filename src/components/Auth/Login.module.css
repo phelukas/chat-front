@@ -1,0 +1,50 @@
+.loginFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px; /* Adiciona um pouco de espaço ao redor para não tocar as bordas */
+}
+
+.loginForm {
+  max-width: 400px;
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade: ajusta o preenchimento e o tamanho máximo em telas menores */
+@media (max-width: 600px) {
+  .loginForm {
+    padding: 20px;
+    max-width: 100%;
+  }
+}
+
+/* Estiliza o botão de submit para ter uma largura total */
+.submitButton {
+  width: 100%;
+}
+
+/* Espaçamento abaixo do checkbox 'Remember me' para não ficar muito próximo do botão */
+.rememberMe {
+  margin-bottom: 20px;
+}
+.createAccountButtonContainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.createAccountButton {
+  background-color: transparent;
+  color: #1890ff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.createAccountButton:hover {
+  text-decoration: underline;
+}
