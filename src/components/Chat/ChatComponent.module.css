@@ -1,0 +1,70 @@
+/* ChatComponent.module.css */
+.chatContainer {
+    background-color: #ffffff; /* Fundo claro */
+    color: #333333; /* Texto escuro */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para o contorno */
+    font-family: Arial, sans-serif; /* Fonte legível */
+}
+
+.header {
+    margin-bottom: 20px; /* Espaçamento abaixo do cabeçalho */
+}
+
+.messageList {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.message {
+    background-color: #f2f2f2; /* Fundo das mensagens */
+    color: #000000; /* Texto das mensagens */
+    padding: 10px;
+    margin: 5px;
+    border-radius: 18px;
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+.sent {
+    background-color: #e6e6ff; /* Fundo de mensagens enviadas */
+    margin-left: auto;
+    text-align: right;
+}
+
+.received {
+    background-color: #e2f0cb; /* Fundo de mensagens recebidas */
+}
+
+.inputArea {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    margin-top: 10px;
+}
+
+.inputArea input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 18px;
+    margin-right: 10px;
+}
+
+.inputArea button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Botão azul */
+    color: white; /* Texto do botão branco */
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave ao mudar de cor */
+}
+
+.inputArea button:hover {
+    background-color: #0056b3; /* Botão azul mais escuro ao passar o mouse */
+}

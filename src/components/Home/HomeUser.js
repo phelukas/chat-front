@@ -54,7 +54,7 @@ const HomeUser = () => {
           <div style={{ padding: 24, minHeight: 360 }}>{renderContent()}</div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>
-          Ant Design ©{new Date().getFullYear()} Created by Ant UED
+          "Earn it, deserve it"
         </Footer>
       </Layout>
     </Layout>

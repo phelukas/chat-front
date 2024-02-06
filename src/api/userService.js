@@ -4,7 +4,6 @@ export const createUser = async (userData) => {
   const response = await axiosInstance.post('users/', userData, {
     headers: { 'Content-Type': 'application/json' },
   });
-  console.log(response)
   return response.data;
 };
 
