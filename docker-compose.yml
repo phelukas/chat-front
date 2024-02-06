@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  chat-front:
+    build: .
+    ports:
+      - "3000:3000"
+    # Remova ou comente as linhas de volumes abaixo se elas estiverem causando problemas
+    # volumes:
+    #   - .:/app
+    #   - /app/node_modules
+    command: serve -s build -l 3000
