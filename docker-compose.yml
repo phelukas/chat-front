@@ -5,8 +5,5 @@ services:
     build: .
     ports:
       - "3000:3000"
-    # Remova ou comente as linhas de volumes abaixo se elas estiverem causando problemas
-    # volumes:
-    #   - .:/app
-    #   - /app/node_modules
+    # O comando abaixo é opcional se já estiver definido no Dockerfile
     command: serve -s build -l 3000
